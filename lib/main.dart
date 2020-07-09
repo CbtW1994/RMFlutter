@@ -1,8 +1,18 @@
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_analytics/observer.dart';
+import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/material.dart';
 
 void main() {
+  // Set `enableInDevMode` to true to see reports while in debug mode
+  // This is only to be used for confirming that reports are being
+  // submitted as expected. It is not intended to be used for everyday
+  // development.
+  Crashlytics.instance.enableInDevMode = true;
+
+  // Pass all uncaught errors from the framework to Crashlytics.
+  FlutterError.onError = Crashlytics.instance.recordFlutterError;
+
   runApp(MyApp());
 }
 
@@ -60,14 +70,16 @@ class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
   void _incrementCounter() {
-    setState(() {
+    Crashlytics.instance.crash();
+
+    /*setState(() {
       // This call to setState tells the Flutter framework that something has
       // changed in this State, which causes it to rerun the build method below
       // so that the display can reflect the updated values. If we changed
       // _counter without calling setState(), then the build method would not be
       // called again, and so nothing would appear to happen.
       _counter++;
-    });
+    });*/
   }
 
   @override
