@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1083021751396",
+    "firebase_url": "https://rmflutter.firebaseio.com",
+    "project_id": "rmflutter",
+    "storage_bucket": "rmflutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1083021751396:android:4b7ecbd8beca9f99ecdb71",
+        "android_client_info": {
+          "package_name": "com.example.RMFlutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1083021751396-qgg1j47g91g8lg7p5leqn2kuqjhvp83c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAS4S0ikpUeLGMBI17BKLXkxz5AwDfRvEY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1083021751396-qgg1j47g91g8lg7p5leqn2kuqjhvp83c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
