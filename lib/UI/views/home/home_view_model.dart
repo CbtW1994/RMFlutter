@@ -8,7 +8,6 @@ class HomeViewModel extends BaseViewModel {
   int get counter => _counter;
 
   void updateCounter() {
-    print("test");
     _counter++;
     notifyListeners();
   }
