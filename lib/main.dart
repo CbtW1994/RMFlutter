@@ -1,4 +1,3 @@
-import 'package:RMFlutter/UI/views/home/home_view.dart';
 import 'package:RMFlutter/app/locator.dart';
 import 'package:RMFlutter/app/router.gr.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
@@ -47,7 +46,6 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: HomeView(),
       navigatorObservers: <NavigatorObserver>[
         FirebaseAnalyticsObserver(
           analytics: FirebaseAnalytics(),
