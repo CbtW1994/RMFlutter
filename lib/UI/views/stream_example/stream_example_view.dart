@@ -6,13 +6,13 @@ class StreamExampleView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ViewModelBuilder<StreamExampleViewModel>.reactive(
-      builder: (context, model, child) => Scaffold(
+      builder: (context, viewModel, child) => Scaffold(
         body: Center(
-          child: Text(model.title),
+          child: Text(viewModel.title),
         ),
         floatingActionButton: MaterialButton(
           child: Text('Change Stream Srouces'),
-          onPressed: model.swapSources,
+          onPressed: viewModel.swapSources,
         ),
       ),
       viewModelBuilder: () => StreamExampleViewModel(),
