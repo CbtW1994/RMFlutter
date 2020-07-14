@@ -1,3 +1,4 @@
+import 'package:RMFlutter/UI/views/reactive_example/reactive_example_view.dart';
 import 'package:RMFlutter/app/locator.dart';
 import 'package:RMFlutter/app/router.gr.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
@@ -28,8 +29,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'RMFlutter',
       navigatorKey: locator<NavigationService>().navigatorKey,
-      initialRoute: Routes.startup,
+      // initialRoute: Routes.startup,
       onGenerateRoute: Router().onGenerateRoute,
+      home: ReactiveExampleView(),
       theme: ThemeData(
         // This is the theme of your application.
         //
