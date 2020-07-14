@@ -1,4 +1,3 @@
-import 'package:RMFlutter/UI/views/stream_example/stream_example_view.dart';
 import 'package:RMFlutter/app/locator.dart';
 import 'package:RMFlutter/app/router.gr.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
@@ -29,9 +28,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'RMFlutter',
       navigatorKey: locator<NavigationService>().navigatorKey,
-      // initialRoute: Routes.startup,
+      initialRoute: Routes.startup,
       onGenerateRoute: Router().onGenerateRoute,
-      home: StreamExampleView(),
       theme: ThemeData(
         // This is the theme of your application.
         //
