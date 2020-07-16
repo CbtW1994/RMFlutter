@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:RMFlutter/app/locator.dart';
+import 'package:RMFlutter/services/api.dart';
 import 'package:RMFlutter/services/media_service.dart';
 import 'package:stacked/stacked.dart';
 
@@ -25,11 +26,11 @@ class ServiceExampleViewModel extends BaseViewModel {
     );
   }
 
-  Future<User> getUserProfile() async {
-    return await _api.getUserProfile(_userId);
-  }
+  // Future<User> getUserProfile() async {
+  //   return await _api.getUserProfile(_userId);
+  // }
 
-  Future<List<Post>> getPostsForUser() async {
-    return await _api.getPostsForUser(_userId);
-  }
+  // Future<List<Post>> getPostsForUser() async {
+  //   return await _api.getPostsForUser(_userId);
+  // }
 }
