@@ -1,4 +1,4 @@
-import 'package:RMFlutter/UI/views/startup/startup_view_model.dart';
+import 'package:RMFlutter/UI/example_views/startup/startup_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
 

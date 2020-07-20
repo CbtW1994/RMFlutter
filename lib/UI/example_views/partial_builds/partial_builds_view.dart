@@ -1,4 +1,4 @@
-import 'package:RMFlutter/UI/views/partial_builds/partial_builds_view_model.dart';
+import 'package:RMFlutter/UI/example_views/partial_builds/partial_builds_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:stacked/stacked.dart';

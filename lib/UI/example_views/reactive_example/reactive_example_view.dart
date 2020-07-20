@@ -1,5 +1,5 @@
-import 'package:RMFlutter/UI/smart_widgets/double_increase_counter/double_increase_counter.dart';
-import 'package:RMFlutter/UI/smart_widgets/single_increase_counter/single_increase_counter.dart';
+import 'package:RMFlutter/UI/example_widgets/double_increase_counter/double_increase_counter.dart';
+import 'package:RMFlutter/UI/example_widgets/single_increase_counter/single_increase_counter.dart';
 import 'package:flutter/material.dart';
 
 class ReactiveExampleView extends StatelessWidget {

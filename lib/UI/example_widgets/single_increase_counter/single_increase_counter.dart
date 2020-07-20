@@ -1,11 +1,11 @@
-import 'package:RMFlutter/UI/smart_widgets/double_increase_counter/double_increase_counter_view_model.dart';
+import 'package:RMFlutter/UI/example_widgets/single_increase_counter/single_increase_counter_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
 
-class DoubleIncreaseCounter extends StatelessWidget {
+class SingleIncreaseCounter extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return ViewModelBuilder<DoubleIncreaseCounterViewModel>.reactive(
+    return ViewModelBuilder<SingleIncreaseCounterViewModel>.reactive(
       builder: (context, viewModel, child) => GestureDetector(
         onTap: viewModel.updateCounter,
         child: Container(
@@ -25,7 +25,7 @@ class DoubleIncreaseCounter extends StatelessWidget {
           ),
         ),
       ),
-      viewModelBuilder: () => DoubleIncreaseCounterViewModel(),
+      viewModelBuilder: () => SingleIncreaseCounterViewModel(),
     );
   }
 }

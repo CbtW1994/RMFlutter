@@ -25,12 +25,15 @@ dependencies:
     sdk: flutter
 
   auto_route: ^0.6.1
+  firebase_auth: ^0.16.1
   firebase_core: ^0.4.0+9
   firebase_analytics: ^5.0.2
   firebase_crashlytics: ^0.1.3+3
   flutter_hooks: ^0.9.0
   get_it: ^4.0.2
+  google_sign_in: ^4.5.1
   injectable: ^0.4.0+1
+  mdi: ^3.0.0
   observable_ish: ^2.1.4
   stacked: ^1.2.2
   stacked_hooks: ^0.1.2

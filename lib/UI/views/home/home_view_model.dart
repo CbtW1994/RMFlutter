@@ -1,14 +1,16 @@
+import 'package:RMFlutter/services/auth_service.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:injectable/injectable.dart';
 import 'package:stacked/stacked.dart';
 
-class HomeViewModel extends BaseViewModel {
-  String _title = 'Home View';
-  String get title => '$_title counter:$counter';
+@injectable
+class HomeViewModel extends ReactiveViewModel {
+  final AuthService _authService;
 
-  int _counter = 0;
-  int get counter => _counter;
+  HomeViewModel(this._authService);
 
-  void updateCounter() {
-    _counter++;
-    notifyListeners();
-  }
+  @override
+  List<ReactiveServiceMixin> get reactiveServices => [_authService];
+
+  FirebaseUser get user => _authService.user;
 }
