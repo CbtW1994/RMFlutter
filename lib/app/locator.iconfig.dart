@@ -4,8 +4,9 @@
 // InjectableConfigGenerator
 // **************************************************************************
 
-import 'package:RMFlutter/services/counter_service.dart';
 import 'package:RMFlutter/modules/third_party_services_module.dart';
+import 'package:RMFlutter/services/counter_service.dart';
+import 'package:RMFlutter/services/media_service.dart';
 import 'package:stacked_services/stacked_services.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
@@ -23,6 +24,7 @@ void $initGetIt(GetIt g, {String environment}) {
       () => thirdPartyServicesModule.firebaseAuth);
   g.registerLazySingleton<GoogleSignIn>(
       () => thirdPartyServicesModule.googleSignIn);
+  g.registerLazySingleton<MediaService>(() => MediaService());
   g.registerLazySingleton<NavigationService>(
       () => thirdPartyServicesModule.navigationService);
   g.registerLazySingleton<AuthService>(
