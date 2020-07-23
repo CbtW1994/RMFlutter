@@ -46,7 +46,23 @@ class AuthService with ReactiveServiceMixin {
     notifyListeners();
   }
 
-  Future<void> signout() async {
+  Future<void> signOut() async {
     await _firebaseAuth.signOut();
+
+    _user = null;
+    notifyListeners();
+  }
+
+  Future<void> signUpWithEmailAndPassword(
+    String email,
+    String password,
+  ) async {
+    final result = await _firebaseAuth.createUserWithEmailAndPassword(
+      email: email,
+      password: password,
+    );
+
+    _user = result.user;
+    notifyListeners();
   }
 }

@@ -20,12 +20,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       navigatorKey: locator<NavigationService>().navigatorKey,
-      initialRoute: Routes.signInView,
       onGenerateRoute: Router().onGenerateRoute,
       title: 'RMFlutter',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        brightness: Brightness.light,
         visualDensity: VisualDensity.adaptivePlatformDensity,
+        primarySwatch: Colors.blue,
+        inputDecorationTheme: InputDecorationTheme(
+          filled: true,
+        ),
       ),
       navigatorObservers: <NavigatorObserver>[
         FirebaseAnalyticsObserver(
